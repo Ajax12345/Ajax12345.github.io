@@ -11,7 +11,7 @@ h1{
 p{
   background-color: green;
 }
-p .announcement{
+p1 .announcement{
   font-family:'Roboto', sans-serif;
   font-weight: 400;
 }
