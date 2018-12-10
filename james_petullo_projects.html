@@ -1,0 +1,374 @@
+<html>
+  <style>
+    .main_header{
+      height:180px;
+      width:auto;
+      text-align: center;
+      padding-bottom:20px;
+      border-bottom:solid;
+      border-bottom-width:1px;
+    }
+    .personal_site_text{
+      font-family: 'Muli', sans-serif;
+      color:black;
+    }
+    .display_name{
+      padding-top:20px;
+    }
+    .site_link{
+      text-decoration: none;
+      color:black;
+      font-size:20px;
+    }
+    .site_link:hover{
+      color:black;
+      text-decoration: none;
+    }
+    .underline{
+      height:4px;
+      background-color: #FDCE20;
+      margin-left:42px;
+    }
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #353C3F;
+       padding-top:20px;
+       padding-bottom:20px;
+       text-align: center;
+    }
+    .main_text_display{
+      height:auto;
+      width:550px;
+      margin:0 auto;
+    }
+    .text_block{
+      width:550px;
+      padding:20px;
+      border:solid;
+      border-width:1px;
+      border-radius:10px;
+      color:black;
+    }
+    .quick_look{
+      font-family: 'Muli', sans-serif;
+      color:black;
+      border:solid;
+      border-radius:5px;
+      padding:7px;
+      font-size:16px;
+      border-width:1.5px;
+      border-color:#FDCE20;
+    }
+    .quick_look:hover{
+      color:white;
+      text-decoration: none;
+      background-color: #FDCE20;
+      -webkit-transition:0.2s
+    }
+    .posts_counter{
+      height:35px;
+      width:35px;
+      color:white;
+      background-color: #FDCE20;
+      border-radius:50%;
+      text-align: center;
+      font-size:24px;
+
+    }
+    .expand{
+      border:none;
+    }
+    .full_project_description{
+      margin-left:35px;
+      padding:10px;
+      border:solid;
+
+      border-width:1px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+    }
+    .tech_tag{
+      padding:5px;
+      color:white;
+      font-family: 'Muli', sans-serif;
+      background-color: #FDCE20;
+      border-radius:2px;
+    }
+  </style>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  </head>
+  <body>
+    <div class='main_header'>
+      <h1 class='personal_site_text display_name'>James Petullo</h1>
+      <div class='container' style='padding-top:50px;'>
+        <div class='row'>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Home</a>
+
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/about'>About me</a>
+
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Blog</a>
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Projects</a>
+            <div class='underline' style='width:78px;'></div>
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Contact</a>
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Stack Overflow</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div style='height:70px;'></div>
+    <div class='main_text_display' style='width:700px;'>
+      <p class='personal_site_text'><strong>Below is a listing of selected projects that I have completed. To see all my creations, please visit my <a  style='color:#FDCE20;' href='https://github.com/Ajax12345'>Github profile</a>.</strong></p>
+      <div class='project_wrapper'>
+        <table>
+          <tr>
+            <td><button class='expand' id='expand0' data-state='collapsed'><i class="fas fa-plus-circle" style='font-size:1.5em;'></i></button></td>
+            <td>
+              <h1 class='personal_site_text' style='margin-top:24px;'>CS3041 projects</h1>
+              <p class='personal_site_text'><small>October 2018 - Present</small></p>
+            </td>
+          </tr>
+        </table>
+        <div id='expanded_for0'></div>
+      </div>
+      <div style='height:50px'></div>
+      <div class='project_wrapper'>
+        <table>
+          <tr>
+            <td><button class='expand' id='expand1' data-state='collapsed'><i class="fas fa-plus-circle" style='font-size:1.5em;'></i></button></td>
+            <td>
+              <h1 class='personal_site_text' style='margin-top:24px;'>jNet</h1>
+              <p class='personal_site_text'><small>October 2018 - December 2018</small></p>
+            </td>
+          </tr>
+        </table>
+        <div id='expanded_for1'></div>
+      </div>
+      <div style='height:50px'></div>
+      <div class='project_wrapper'>
+        <table>
+          <tr>
+            <td><button class='expand' id='expand4' data-state='collapsed'><i class="fas fa-plus-circle" style='font-size:1.5em;'></i></button></td>
+            <td>
+              <h1 class='personal_site_text' style='margin-top:24px;'>telemonius</h1>
+              <p class='personal_site_text'><small>September 2018 - October 2018</small></p>
+            </td>
+          </tr>
+        </table>
+        <div id='expanded_for4'></div>
+      </div>
+      <div style='height:50px'></div>
+      <div class='project_wrapper'>
+        <table>
+          <tr>
+            <td><button class='expand' id='expand3' data-state='collapsed'><i class="fas fa-plus-circle" style='font-size:1.5em;'></i></button></td>
+            <td>
+              <h1 class='personal_site_text' style='margin-top:24px;'>py_to_asm</h1>
+              <p class='personal_site_text'><small>July 2018</small></p>
+            </td>
+          </tr>
+        </table>
+        <div id='expanded_for3'></div>
+      </div>
+      <div style='height:50px'></div>
+      <div class='project_wrapper'>
+        <table>
+          <tr>
+            <td><button class='expand' id='expand2' data-state='collapsed'><i class="fas fa-plus-circle" style='font-size:1.5em;'></i></button></td>
+            <td>
+              <h1 class='personal_site_text' style='margin-top:24px;'>mylang</h1>
+              <p class='personal_site_text'><small>April 2018 - June 2018</small></p>
+            </td>
+          </tr>
+        </table>
+        <div id='expanded_for2'></div>
+      </div>
+
+
+    </div>
+    </div>
+
+    <div style='height:300px;'></div>
+    <div class="footer">
+      <p class='personal_site_text' style='color:#FDCE20;'>Caesarem Vehis!</p>
+      <div class='container' style='width:200px;'>
+        <div class='row'>
+          <div class='col'><a href='https://github.com/Ajax12345'><i class="fab fa-github" style='font-size:1.5em;color:#FDCE20'></i></a></div>
+          <div class='col'><a href='https://stackoverflow.com/users/7326738/ajax1234?tab=profile'><i class="fab fa-stack-overflow" style='font-size:1.5em;color:#FDCE20;'></i></a></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script>
+  $(document).ready(function(){
+    var container = {};
+    function project1(){
+
+      var the_html = `
+        <div class='full_project_description'>
+          <p class='personal_site_text'>jNet is a server-mediated, peer-to-peer system for hosting simple decentralized applications. This project utilizes the telemonius microframework (see below) to power the applications hosted by jNet.</p>
+          <div style='height:20px;'></div>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-auto'>
+                <table>
+                  <tr>
+                    <td><i class="fab fa-github" style='font-size:1.5em;'></i></td>
+                    <td><a class='personal_site_text' href='https://github.com/Ajax12345/jNet' style='color:black;'><u>jNet on Github</u></a></td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class='col' style='margin-left:220px;'>
+                <span class='tech_tag'>python</span> <span class='tech_tag'>jquery</span> <span class='tech_tag'>sqlite</span> <span class='tech_tag'>tcp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      $('#expanded_for1').html(the_html);
+    }
+    function project2(){
+      var the_html = `
+        <div class='full_project_description'>
+          <p class='personal_site_text'>Mylang is a dynamically typed, object orientated toy programming language, inspired by Python 3, Java, and Javascript. mylang is a toy language I wrote to incorporate several useful Python3 features into a javascript-style syntax.</p>
+          <div style='height:20px;'></div>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-auto'>
+                <table>
+                  <tr>
+                    <td><i class="fab fa-github" style='font-size:1.5em;'></i></td>
+                    <td><a class='personal_site_text' href='https://github.com/Ajax12345/mylang' style='color:black;'><u>mylang on Github</u></a></td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class='col' style='margin-left:320px;'>
+                <span class='tech_tag'>python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      $('#expanded_for2').html(the_html);
+    }
+    function project3(){
+      var the_html = `
+        <div class='full_project_description'>
+          <p class='personal_site_text'>py_to_asm enables a user to generate x86-64 Assembly cleanly, easily, and effectively. I plan on utilizing this package to build a more powerful version of the mylang language (see above).</p>
+          <div style='height:20px;'></div>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-auto'>
+                <table>
+                  <tr>
+                    <td><i class="fab fa-github" style='font-size:1.5em;'></i></td>
+                    <td><a class='personal_site_text' href='https://github.com/Ajax12345/py_to_asm' style='color:black;'><u>py_to_asm on Github</u></a></td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class='col' style='margin-left:210px;'>
+                <span class='tech_tag'>python</span> <span class='tech_tag'>x86-64 asm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      $('#expanded_for3').html(the_html);
+    }
+    function project4(){
+      var the_html = `
+        <div class='full_project_description'>
+          <p class='personal_site_text'>Telemonius was created to support the development of the jNet peer-to-peer decentralized app hosting system. Telemonius's API enables a user to create a standard set of routes mapped to corresponding handlers, a process familiar to any webapp developer. Telemonius supports redirections, jNet browser sessions, page templating, and more.</p>
+          <div style='height:20px;'></div>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-auto'>
+                <table>
+                  <tr>
+                    <td><i class="fab fa-github" style='font-size:1.5em;'></i></td>
+                    <td><a class='personal_site_text' href='https://github.com/Ajax12345/telemonius' style='color:black;'><u>telemonius on Github</u></a></td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class='col' style='margin-left:320px;'>
+                <span class='tech_tag'>python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      $('#expanded_for4').html(the_html);
+    }
+    function project0(){
+
+      var the_html = `
+        <div class='full_project_description'>
+          <p class='personal_site_text'>Below are the links to each Medium post for every project:</p>
+          <ul>
+            <li><p class='personal_site_text'><strong>Good design, Bad design:</strong></p> <a class='personal_site_text' href='https://medium.com/theindexerror/examples-of-exceptional-content-on-the-homepage-of-wpi-4dd934e7983a'>Reflection 1</a>, <a class='personal_site_text' href='https://medium.com/theindexerror/improving-the-wpi-homepage-information-pane-5462f9fe99a3'>Reflection 2</a></li>
+            <li><p class='personal_site_text'><a href='https://medium.com/@jpetullo14/reflection-on-design-for-understanding-180c44e0a0ba' style='color:black;'><strong>Design for understanding</strong></a></p></li>
+            <li><p class='personal_site_text'><a href='https://medium.com/@jpetullo14/reflection-on-design-for-tension-892fe5549bd3' style='color:black;'><strong>Design for tension</strong></a></p></li>
+            <li><p class='personal_site_text'><a href='https://medium.com/@jpetullo14/reflection-on-design-for-wellbeing-52a706e89a5a' style='color:black;'><strong>Design for wellbeing</strong></a></p></li>
+            
+          </ul>
+          <div style='height:20px;'></div>
+          <div class='container'>
+            <div class='row'>
+
+
+              <div class='col' style='margin-left:320px;'>
+                <span class='tech_tag'>python</span> <span class='tech_tag'>jquery</span> <span class='tech_tag'>jquery</span> <span class='tech_tag'>css</span> <span class='tech_tag'>aframe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      $('#expanded_for0').html(the_html);
+    }
+    var hashed_results = {'1':project1, '2':project2, '3':project3, '4':project4, '0':project0};
+    $('.main_text_display').on('click', '.expand', function(){
+      var _id = this.id.match('\\d+');
+
+      if ($(this).data('state') === 'collapsed'){
+        $(this).html('<i class="fas fa-minus-circle" style="font-size:1.5em;"></i>');
+        $(this).data('state', 'expanded');
+        hashed_results[_id]();
+      }
+      else{
+        $(this).data('state', 'collapsed');
+        $(this).html("<i class='fas fa-plus-circle' style='font-size:1.5em;'></i>");
+        $('#expanded_for'+_id).html('');
+      }
+    });
+  });
+  </script>
+</html>
