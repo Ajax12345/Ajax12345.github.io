@@ -1,0 +1,147 @@
+<html>
+  <style>
+    .main_header{
+      height:180px;
+      width:auto;
+      text-align: center;
+      padding-bottom:20px;
+      border-bottom:solid;
+      border-bottom-width:1px;
+    }
+    .personal_site_text{
+      font-family: 'Muli', sans-serif;
+      color:black;
+    }
+    .display_name{
+      padding-top:20px;
+    }
+    .site_link{
+      text-decoration: none;
+      color:black;
+      font-size:20px;
+    }
+    .site_link:hover{
+      color:black;
+      text-decoration: none;
+    }
+    .underline{
+      height:4px;
+      background-color: #FDCE20;
+      margin-left:57px;
+    }
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #353C3F;
+       padding-top:20px;
+       padding-bottom:20px;
+       text-align: center;
+    }
+    .main_text_display{
+      height:auto;
+      width:550px;
+      margin:0 auto;
+    }
+    .text_block{
+      width:550px;
+      padding:20px;
+      border:solid;
+      border-width:1px;
+      border-radius:10px;
+      color:black;
+    }
+    .quick_look{
+      font-family: 'Muli', sans-serif;
+      color:black;
+      border:solid;
+      border-radius:5px;
+      padding:7px;
+      font-size:16px;
+      border-width:1.5px;
+      border-color:#FDCE20;
+    }
+    .quick_look:hover{
+      color:white;
+      text-decoration: none;
+      background-color: #FDCE20;
+      -webkit-transition:0.2s
+    }
+    .posts_counter{
+      height:35px;
+      width:35px;
+      color:white;
+      background-color: #FDCE20;
+      border-radius:50%;
+      text-align: center;
+      font-size:24px;
+
+    }
+  </style>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  </head>
+  <body>
+    <div class='main_header'>
+      <h1 class='personal_site_text display_name'>James Petullo</h1>
+      <div class='container' style='padding-top:50px;'>
+        <div class='row'>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Home</a>
+
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/about'>About me</a>
+
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Blog</a>
+            <div class='underline' style='width:45px;'></div>
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Projects</a>
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Contact</a>
+          </div>
+          <div class='col'>
+            <a class='personal_site_text site_link' href='/'>Stack Overflow</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div style='height:70px;'></div>
+    <div class='main_text_display' style='width:700px;'>
+      <table>
+        <tr>
+          <td><h1 class='personal_site_text'>Posts</h1></td>
+          <td><div class='posts_counter'><span style='line-height:35px;'>0</span></div></td>
+        </tr>
+      </table>
+
+      <div style='height:50px;'></div>
+      <i class='personal_site_text'>No posts yet</i>
+    </div>
+    <div style='height:300px;'></div>
+    <div class="footer">
+      <p class='personal_site_text' style='color:#FDCE20;'>Caesarem Vehis!</p>
+      <div class='container' style='width:200px;'>
+        <div class='row'>
+          <div class='col'><a href='https://github.com/Ajax12345'><i class="fab fa-github" style='font-size:1.5em;color:#FDCE20'></i></a></div>
+          <div class='col'><a href='https://stackoverflow.com/users/7326738/ajax1234?tab=profile'><i class="fab fa-stack-overflow" style='font-size:1.5em;color:#FDCE20;'></i></a></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
